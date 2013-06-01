@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>ohmage</title>
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+
+        <link rel="stylesheet" href="static/ohmagehome/css/home.css" type="text/css" />
+        <link rel="shortcut icon" href="static/images/favicon-gray.ico" />
+
+        <script src="static/js/jquery-1.7.1.min.js" type="text/javascript" language="Javascript"></script>
+        <script src="static/js/jquery.scrollTo-1.4.2-min.js" type="text/javascript" language="Javascript"></script>
+
+        <!-- used to keep history on fragmented pages -->
+        <script src="static/js/jquery.ba-hashchange.min.js" type="text/javascript" language="Javascript"></script>
+
+        <!-- used to transmit events throughout the codebase -->
+        <script src="static/js/pubsub.js" type="text/javascript" language="Javascript"></script>
+
+        <!-- attach your page-specific code here -->
+        <script type="text/javascript" language="Javascript">
+            
+        </script>
+
+        <style>
+        .personnel_list {
+            margin-left: 20px;
+            margin-bottom: 1.5em;
+        }
+
+        .personnel_list h1 { margin-left: -20px; font-size: 17px; }
+        .personnel_list h2 { margin-left: -10px; font-size: 16px; }
+
+        #maincol {
+            background: white url('static/ohmagehome/images/microscope_silkscreen.png') no-repeat bottom right;
+        }
+        </style>
+    </head>
+
+    <body>
+        <div id="trunk">
+            <div id="header">
+                <img id="header_img" src="static/ohmagehome/images/login-logo.png" />
+            </div>
+
+            <div id="navbar">
+                <ul id="navlist">
+                    <li>
+                        
+                        <a href="index.html" class="">Home</a>
+                    </li>
+                    <li>
+                        
+                        <a href="usage" class="">Usage</a>
+                    </li>
+                    <li>
+                        
+                        <a href="projects" class="">Projects</a>
+                    </li>
+                    <li>
+                        
+                        <a href="papers" class="">Papers</a>
+                    </li>
+                    <li>
+                        
+                        <a href="contributors" class="active">Contributors</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div id="maincol" class="content_pane fullwidth">
+                <div class="subheader">who has contributed to ohmage?</div>
+
+                <!--
+                <p>
+                ohmage leverages funding from Google for graduate and undergraduate student researchers, with NSF and UCLA funds for technical staff, and with NSF and NIH funding for application pilots. The current project includes: 5 technical staff, 6 students, and 4 faculty (from CS, statistics, health sciences, and education) and has been used in various contexts by hundreds of end-users.
+                </p>
+                -->
+
+                <p>
+                    <div class="personnel_list">
+                        <h1>Technology Co-PIs:</h1>
+                        Deborah Estrin, Mark Hansen, Nithya Ramanathan, Joshua Selsky, Hongsuda Tangmunarunkit
+                    </div>
+
+                    <div class="personnel_list">
+                        <h1>Application/Domain Expert Faculty/PIs (Health Science):</h1>
+                        Robert Bilder, Jacqueline Casillas, Scott Comulada, Patricia Ganz, Mary Jane Rotheram-Borus, Ida Sim (UCSF), Fred Sabb, Dallas Swendeman, Michael Swiernik
+                    </div>
+                    <div class="personnel_list">
+                        <h1>Students, Staff:</h1>
+                        <h2>Staff:</h2>
+                        Betta Dawson, John Jenkins, Cameron Ketcham, Steve Nolen
+                        <h2>Graduate Students:</h2>
+                        Faisal Alquaddoomi, Hossein Falaki, Brent Longstaff, Andy Hsieh, Jinha Khang, Donnie Kim, Min Mun, Katie Shilton, Eric Wang
+                    </div>
+                    <div class="personnel_list">
+                        <h1>Sponsors and Partners/Collaborators:</h1>
+                            <div><h2>Cornell:</h2> Cornell Tech, WMC CHiP</div>
+                            <div><h2>UCLA:</h2> CENS, GCFC, CHIPTS, Health Sciences, JCCC</div>
+                            <div><h2>Federal Funding:</h2> NSF STC (NSF Award #0962919) and CISE (Cooperative Agreement #CCF-0120778), NIH</div>
+                            <div><h2>Corporate Funding:</h2> Google, Intel iSTC; MSR, Nokia, T-Mobile</div>
+                            <div><h2>Foundations/NGOs:</h2> RWJF, CHCF, CRA</div>
+                    </div>
+                </p>
+            </div>
+
+            <div id="footer" class="content_pane">
+                <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0; float: left; margin-right: 10px;" src="http://i.creativecommons.org/l/by/3.0/80x15.png"></a><br><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">ohmage website</span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US">Creative Commons Attribution 3.0 Unported License</a> -- for more information, contact josh (at) openmhealth.org
+            </div>
+        </div>
+    </body>
+</html>

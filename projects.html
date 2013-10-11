@@ -1,3 +1,5 @@
+---
+---
 <!DOCTYPE html>
 
 <html>
@@ -6,8 +8,8 @@
 
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
 
-        <link rel="stylesheet" href="static/ohmagehome/css/home.css" type="text/css" />
-        <link rel="shortcut icon" href="static/images/favicon-gray.ico" />
+        <link rel="stylesheet" href="static/ohmagehome/css/home.css" type="text/css"/>
+        <link rel="shortcut icon" href="static/images/favicon-gray.ico"/>
 
         <script src="static/js/jquery-1.7.1.min.js" type="text/javascript" language="Javascript"></script>
         <script src="static/js/jquery.scrollTo-1.4.2-min.js" type="text/javascript" language="Javascript"></script>
@@ -19,131 +21,114 @@
         <script src="static/js/pubsub.js" type="text/javascript" language="Javascript"></script>
 
         <style>
-        .project {
-            font-size: 14px;
-            margin-bottom: 1em;
-        }
-        .project p, .project h3 { margin: 0px; margin-bottom: 8px; }
-        .project .collabs {  margin-bottom: 6px; font-style: italic; }
-        .project .desc {  margin-bottom: 6px; }
+            .project {
+                font-size: 14px;
+                margin-bottom: 1em;
+            }
+
+            .project p, .project h3 { margin: 0px; margin-bottom: 8px; }
+
+            .project .collabs { margin-bottom: 6px; font-style: italic; }
+
+            .project .desc { margin-bottom: 6px; }
         </style>
     </head>
 
     <body>
         <div id="trunk">
             <div id="header">
-                <img id="header_img" src="static/ohmagehome/images/login-logo.png" />
+                <img id="header_img" src="static/ohmagehome/images/login-logo.png"/>
             </div>
 
-            <div id="navbar">
-                <ul id="navlist">
-                    <li>
-                        
-                        <a href="index.html" class="">Home</a>
+            {% include navbar.html %}
+
+            <div id="maincol" class="content_pane fullwidth">
+
+                <div class="subheader">what projects have involved ohmage?</div>
+
+                <p>Below is a list of projects that utilize <strong>ohmage</strong>.</p>
+
+                <h3>Current</h3>
+                <ul>
+                    <li class="project">
+                        <h3 style="display: inline;">N-of-1 Trials Using mHealth in Chronic Pain</h3>
+
+                        <p class="collabs">Richard L. Kravitz, MD, MSPH, Ida Sim (Medicine, University of California San Francisco & Co-Founder <a href="http://openmhealth.org">openmhealth.org</a>)</p>
                     </li>
-                    <li>
-                        
-                        <a href="usage.html" class="">Usage</a>
+
+                    <li class="project">
+                        <h3 style="display: inline;">Studying Diet, Stress, and Exercise Related Risk Factors for
+                            Cardiovascular Disease</h3>
+
+                        <p class="collabs">Nithya Ramanathan (Computer Science, UCLA)</p>
                     </li>
-                    <li>
-                        
-                        <a href="projects.html" class="active">Projects</a>
+
+                    <li class="project">
+                        <h3 style="display: inline;">High Risk Behaviors in HIV+ Men</h3>
+
+                        <p class="collabs">Dallas Swendeman (Center for HIV Intervention, Prevention, and Treatment
+                            Services, UCLA)</p>
                     </li>
-                    <li>
-                        
-                        <a href="papers.html" class="">Papers</a>
+
+                    <li class="project">
+                        <h3 style="display: inline;">Social Networks and Risky Behaviors Related to HIV in Men Who Have
+                            Sex With Men</h3>
+
+                        <p class="collabs">Scott Comulada (Center for HIV Intervention, Prevention, and Treatment
+                            Services, UCLA)</p>
                     </li>
-                    <li>
-                        
-                        <a href="contributors.html" class="">Contributors</a>
+
+                    <li class="project">
+                        <h3 style="display: inline;">ADHD</h3>
+
+                        <p class="collabs">Fred Sabb &amp; Jim McCracken (Neuroscience, Neuropsychiatry, UCLA)</p>
                     </li>
+
+                    <li class="project">
+                        <h3 style="display: inline;">Exercise in South Asian Women</h3>
+
+                        <p class="collabs">Namratha Kandula (Medicine, Northwestern University)</p>
+                    </li>
+
+                    <li class="project">
+                        <h3 style="display: inline;">Mood and Energy in Breast Cancer Survivors</h3>
+
+                        <p class="collabs">Patricia Ganz (Medicine &amp; Health Services, UCLA School of Public
+                            Health)</p>
+                    </li>
+
+                    <li class="project">
+                        <h3 style="display: inline;">Mobilize: Mobilizing LAUSD High School Students in STEM
+                            Education</h3>
+
+                        <p class="collabs">Deborah Estrin (Computer Science, Cornell Tech &amp; Co-Founder
+                            <a href="http://openmhealth.org">openmhealth.org</a>), Mark Hansen (Journalism,
+                            Columbia University), Hongsuda Tangmunarunkit (UCLA)</p>
+
+                        <p class="link"><a href="http://www.mobilizingcs.org/">http://www.mobilizingcs.org/</a></p>
+                    </li>
+
+                    <li class="project">
+                        <h3 style="display: inline;">Monitoring Diabetes in an n-of-1 Trial </h3>
+
+                        <p class="collabs">Deborah Estrin (Computer Science, Cornell Tech &amp; Co-Founder
+                            <a href="http://openmhealth.org">openmhealth.org</a>), Ida Sim (Medicine, University of California San Francisco &amp;
+                            Co-Founder <a href="http://openmhealth.org">openmhealth.org</a>) </p>
+                    </li>
+
+                    <li class="project">
+                        <h3 style="display: inline;">Exploring PTSD in Veterans</h3>
+
+                        <p class="collabs">Deborah Estrin (Computer Science, Cornell Tech &amp; Co-Founder
+                            <a href="http://openmhealth.org">openmhealth.org</a>), Ida Sim (Medicine,
+                            University of California San Francisco &amp; Co-Founder <a href="http://openmhealth.org">openmhealth.org</a>)</p>
+                    </li>
+
                 </ul>
+
             </div>
 
-            
-<div id="maincol" class="content_pane fullwidth">
-    
-    <div class="subheader">what projects have involved ohmage?</div>
-
-    <p>Below is a list of projects that utilize <strong>ohmage</strong>.</p>
-
-    
-
-    
-        <h3>Current</h3>
-        <ul>
-        
-            <li class="project">
-                <h3 style="display: inline;">Studying Diet, Stress, and Exercise Related Risk Factors for Cardiovascular Disease</h3>
-                <p class="collabs">Nithya Ramanathan (Computer Science, UCLA)</p>
-                
-                
-            </li>
-        
-            <li class="project">
-                <h3 style="display: inline;">High Risk Behaviors in HIV+ Men</h3>
-                <p class="collabs">Dallas Swendeman (Center for HIV Intervention, Prevention, and Treatment Services, UCLA)</p>
-                
-                
-            </li>
-        
-            <li class="project">
-                <h3 style="display: inline;">Social Networks and Risky Behaviors Related to HIV in Men Who Have Sex With Men</h3>
-                <p class="collabs">Scott Comulada (Center for HIV Intervention, Prevention, and Treatment Services, UCLA)</p>
-                
-                
-            </li>
-        
-            <li class="project">
-                <h3 style="display: inline;">ADHD</h3>
-                <p class="collabs">Fred Sabb &amp; Jim McCracken (Neuroscience, Neuropsychiatry, UCLA)</p>
-                
-                
-            </li>
-        
-            <li class="project">
-                <h3 style="display: inline;">Exercise in South Asian Women</h3>
-                <p class="collabs">Namratha Kandula (Medicine, Northwestern University)</p>
-                
-                
-            </li>
-        
-            <li class="project">
-                <h3 style="display: inline;">Mood and Energy in Breast Cancer Survivors</h3>
-                <p class="collabs">Patricia Ganz (Medicine &amp; Health Services, UCLA School of Public Health)</p>
-                
-                
-            </li>
-        
-            <li class="project">
-                <h3 style="display: inline;">Mobilize: Mobilizing LAUSD High School Students in STEM Education</h3>
-                <p class="collabs">Deborah Estrin (Computer Science, Cornell Tech), Mark Hansen (Journalism, Columbia University), Hongsuda Tangmunarunkit (UCLA)</p>
-                
-                <p class="link"><a href="http://www.mobilizingcs.org/">http://www.mobilizingcs.org/</a></p>
-            </li>
-        
-            <li class="project">
-                <h3 style="display: inline;">Monitoring Diabetes in an n-of-1 Trial </h3>
-                <p class="collabs">Deborah Estrin (Computer Science, Cornell Tech &amp; Co-Founder open-mhealth.org), Ida Sim (Medicine, University of California San Francisco &amp; Co-Founder open-mhealth.org) </p>
-                
-                
-            </li>
-        
-            <li class="project">
-                <h3 style="display: inline;">Exploring PTSD in Veterans</h3>
-                <p class="collabs">Deborah Estrin (Computer Science, Cornell Tech), Ida Sim (Medicine, University of California San Francisco)</p>
-                
-                
-            </li>
-        
-        </ul>
-
-</div>
-
-
-            <div id="footer" class="content_pane">
-                <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0; float: left; margin-right: 10px;" src="http://i.creativecommons.org/l/by/3.0/80x15.png"></a><br><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">ohmage website</span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US">Creative Commons Attribution 3.0 Unported License</a> -- for more information, contact josh (at) openmhealth.org
-            </div>
+            {% include footer.html %}
         </div>
     </body>
 </html>

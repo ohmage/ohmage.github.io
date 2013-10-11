@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>ohmage</title>
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+
+        <link rel="stylesheet" href="static/ohmagehome/css/home.css" type="text/css" />
+        <link rel="shortcut icon" href="static/images/favicon-gray.ico" />
+
+        <script src="static/js/jquery-1.7.1.min.js" type="text/javascript" language="Javascript"></script>
+        <script src="static/js/jquery.scrollTo-1.4.2-min.js" type="text/javascript" language="Javascript"></script>
+
+        <!-- used to keep history on fragmented pages -->
+        <script src="static/js/jquery.ba-hashchange.min.js" type="text/javascript" language="Javascript"></script>
+
+        <!-- used to transmit events throughout the codebase -->
+        <script src="static/js/pubsub.js" type="text/javascript" language="Javascript"></script>
+
+        <style>
+        {{ page.style }}
+        </style>
+    </head>
+
+    <body>
+        <div id="trunk">
+            <div id="header">
+                <img id="header_img" src="static/ohmagehome/images/login-logo.png" />
+            </div>
+
+            {% include navbar.html %}
+
+            <div id="maincol" class="content_pane fullwidth">
+                {{ content }}
+            </div>
+
+            {% include footer.html %}
+        </div>
+    </body>
+</html>

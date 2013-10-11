@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>ohmage</title>
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+
+        <link rel="stylesheet" href="static/ohmagehome/css/home.css" type="text/css" />
+        <link rel="shortcut icon" href="static/images/favicon-gray.ico" />
+
+        <script src="static/js/jquery-1.7.1.min.js" type="text/javascript" language="Javascript"></script>
+        <script src="static/js/jquery.scrollTo-1.4.2-min.js" type="text/javascript" language="Javascript"></script>
+
+        <!-- used to keep history on fragmented pages -->
+        <script src="static/js/jquery.ba-hashchange.min.js" type="text/javascript" language="Javascript"></script>
+
+        <!-- used to transmit events throughout the codebase -->
+        <script src="static/js/pubsub.js" type="text/javascript" language="Javascript"></script>
+
+        <!-- attach your page-specific code here -->
+        <script type="text/javascript" language="Javascript">
+
+        </script>
+
+        <style>
+        {{ page.style }}
+        </style>
+    </head>
+
+    <body>
+        <div id="trunk">
+            <div id="header">
+                <img id="header_img" src="static/ohmagehome/images/login-logo.png" />
+            </div>
+
+            {% include navbar.html %}
+
+            <div id="maincol" class="content_pane">
+                {{ content }}
+            </div>
+
+            <div id="infocol" class="content_pane">
+                <div id="twitter_header"><a href="https://twitter.com/openmhealth">@openmhealth</a></div>
+
+                <!--
+                <ul id="twitter_list">
+                </ul>
+            	-->
+
+                <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/OpenMHealth" data-chrome="noheader noborders noscrollbar transparent" data-tweet-limit="6" data-widget-id="340750660217757697">Tweets by @OpenMHealth</a>
+                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+            </div>
+
+            {% include footer.html %}
+        </div>
+    </body>
+</html>

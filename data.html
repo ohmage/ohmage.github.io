@@ -1,0 +1,61 @@
+---
+---
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>ohmage</title>
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+
+        <link rel="stylesheet" href="static/ohmagehome/css/home.css" type="text/css"/>
+        <link rel="shortcut icon" href="static/images/favicon-gray.ico"/>
+
+        <script src="static/js/jquery-1.7.1.min.js" type="text/javascript" language="Javascript"></script>
+        <script src="static/js/jquery.scrollTo-1.4.2-min.js" type="text/javascript" language="Javascript"></script>
+
+        <!-- used to keep history on fragmented pages -->
+        <script src="static/js/jquery.ba-hashchange.min.js" type="text/javascript" language="Javascript"></script>
+
+        <!-- used to transmit events throughout the codebase -->
+        <script src="static/js/pubsub.js" type="text/javascript" language="Javascript"></script>
+
+        <style>
+            .project {
+                font-size: 14px;
+                margin-bottom: 1em;
+            }
+
+            .project p, .project h3 { margin: 0px; margin-bottom: 8px; }
+
+            .project .collabs { margin-bottom: 6px; font-style: italic; }
+
+            .project .desc { margin-bottom: 6px; }
+        </style>
+    </head>
+
+    <body>
+        <div id="trunk">
+            <div id="header">
+                <img id="header_img" src="static/ohmagehome/images/login-logo.png"/>
+            </div>
+
+            {% include navbar.html %}
+
+            <div id="maincol" class="content_pane fullwidth">
+
+                <div class="subheader">what data is available for testing/analysis?</div>
+
+                <p>
+                    In order to support the development of applications and for research purposes, the ohmage project
+                    makes available a number of real-world, anonymized datasets collected from participants. You can
+                    access these datasets through the Github repo below.
+                </p>
+
+                <a href="https://github.com/ohmage/mobility-data-commons">ohmage Mobility Data Commons</a>
+            </div>
+
+            {% include footer.html %}
+        </div>
+    </body>
+</html>

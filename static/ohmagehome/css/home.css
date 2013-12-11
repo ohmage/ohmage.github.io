@@ -38,6 +38,8 @@ a:hover { text-decoration: underline; }
 #maincol {
     width: 620px;
     float: left;
+    border-right: solid 1px #e4e4e4;
+    padding-right: 30px;
 }
 
 #maincol.fullwidth {
@@ -50,8 +52,6 @@ a:hover { text-decoration: underline; }
     width: 260px;
     display: inline;
     position: relative; left: -10px;
-    border-left: solid 1px #e4e4e4;
-    padding-left: 30px;
 }
 
 /* this is a forward reference specific to home, but i'll include it here anyway */
@@ -68,6 +68,8 @@ a:hover { text-decoration: underline; }
     #maincol {
         width: auto;
         float: none;
+        border-right: none;
+        padding-right: 0;
     }
     
     #software_table_desc {

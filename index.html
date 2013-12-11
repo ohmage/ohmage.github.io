@@ -31,6 +31,28 @@
             p.note { text-indent: 0; font-size: 12px; color: #555; }
 
             #maincol p.home_text { line-height: 180%; }
+
+            /* quick link icons */
+            ul.graphical
+            {
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+                margin-left: 10px;
+            }
+
+            ul.graphical li
+            {
+                font-size: 14px;
+                background: no-repeat 0 center;
+                padding: 6px;
+                padding-left: 26px;
+                padding-right: 0px;
+            }
+
+            ul.graphical li.ohmage { background-image: url('static/ohmagehome/icons/micro/ohmage-micro.png'); }
+            ul.graphical li.mobility { background-image: url('static/ohmagehome/icons/micro/mobility-micro.png'); }
+            ul.graphical li.github { background-image: url('static/ohmagehome/icons/micro/github-micro.png'); }
         </style>
     </head>
 
@@ -147,36 +169,18 @@
                     as well as self-report
                 </p>
 
+                <!--
                 <p class="tooltip">
                     <img src="static/ohmagehome/icons/bullhorn.png" class="icon"/>
                     <b>TIP:</b> If you'd like to learn how to use ohmage for your project, take a look at the
                     <a href="usage.html">Usage</a> page.
                 </p>
+                -->
 
             </div>
 
             <div id="infocol" class="content_pane">
-
-
-                <div id="twitter_header"><a href="https://twitter.com/openmhealth">@openmhealth</a></div>
-
-                <!--
-                <ul id="twitter_list">
-                </ul>
-            	-->
-
-                <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/OpenMHealth" data-chrome="noheader noborders noscrollbar transparent" data-tweet-limit="6" data-widget-id="340750660217757697">Tweets
-                    by @OpenMHealth</a>
-                <script>!function (d, s, id) {
-                    var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
-                    if (!d.getElementById(id)) {
-                        js = d.createElement(s);
-                        js.id = id;
-                        js.src = p + "://platform.twitter.com/widgets.js";
-                        fjs.parentNode.insertBefore(js, fjs);
-                    }
-                }(document, "script", "twitter-wjs");</script>
-
+                {% include sidebar.html %}
             </div>
 
             {% include footer.html %}
